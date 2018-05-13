@@ -19,7 +19,7 @@ category: clean_code
 * **程式碼 應該 易於理解** (可讀性基本原理)
 
 <details>
-  <summary>撰寫程式時, 應該將 讀者理解 所需的時間 降到最短</summary>
+  <summary markdown="span">撰寫程式時, 應該將 讀者理解 所需的時間 降到最短</summary>
   
   舉個例子, 這種寫法:
 
