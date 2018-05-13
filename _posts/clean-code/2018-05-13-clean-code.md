@@ -1,12 +1,11 @@
 ---
 layout: page
-title: Python-Coding-Style
+title: Clean-Code
 category: clean_code
 ---
 
 ## 前言
 **Q1: 為什麼 我們需要 無瑕的程式碼 clean code**
-
 <details><summary markdown="span">曾經有這樣的玩笑, "唯一有效的 程式品質 度量單位: 每分鐘罵髒話的次數 (WTFs/minute)"</summary>
 也有人統計過, 一個軟體工程師 撰寫程式碼 與 閱讀程式碼 的時間比大約是 1:9<br/>
 換句話說, 除了追求程式碼的 效能與正確性 外, 撰寫時的 可閱讀性 亦是重要的一環<br/>
@@ -14,12 +13,10 @@ category: clean_code
 </details><br/>
 
 **Q2: 怎樣的 程式碼, 能夠稱之為 clean code?**
-
 <details><summary markdown="span">程式碼 應該 **易於理解**</summary>
-
   <details><summary markdown="span">**可讀性基本定理**: 撰寫程式時, 應該將 讀者理解 所需的時間 降到最短</summary>
   舉個例子, 這種寫法:
-
+    
 ```java
 for (Node * node = list->head; node != NULL; node = node->next)
     Print(node->data);
@@ -40,7 +37,6 @@ if (node != NULL) Print(node->data);
 </details><br/>
 
 **Q3: 短的程式碼 都比較好嗎?**
-
 <details><summary markdown="span">不一定. 與其 減少程式碼數量, 還不如 想辦法 **縮短理解時間** 更加重要</summary>
   舉個例子, 這個 單行 表示式:
  
