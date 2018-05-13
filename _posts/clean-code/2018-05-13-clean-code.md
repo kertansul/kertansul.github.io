@@ -13,7 +13,7 @@ category: clean_code
 </details><br>
 
 **Q2: 怎樣的 程式碼, 能夠稱之為 clean code?**
-<details><summary markdown="span"><span style="color:blue">程式碼 應該 **易於理解**</span></summary>
+<details><summary markdown="span">程式碼 應該 <span style="color:blue">**易於理解**</span></summary>
   **可讀性基本定理**: 撰寫程式時, 應該將 讀者理解 所需的時間 降到最短<br>
   舉個例子, 這種寫法:
     
