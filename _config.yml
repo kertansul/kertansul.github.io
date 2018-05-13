@@ -1,6 +1,6 @@
 
 # Setup
-title:               import numpy as np
+title:               import numpy as my
 tagline:             'notetaking as a machine learning engineer'
 description:         "Kertansul's Blog"
 urt:                 http://kertansul.github.io
@@ -14,4 +14,4 @@ author:
   email:             kertansul@gmail.com
 
 # Custom vars
-version:             0.3.3
+version:             1.0.0
