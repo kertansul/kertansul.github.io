@@ -1,9 +1,9 @@
 
 # Setup
-title:               Hello World
-tagline:             'notetaking as a software engineer'
-description:         ''
-url:                 http://kertansul.github.io
+title:               Import numpy as np
+tagline:             'notetaking as a machine learning engineer'
+description:         "Kertansul's Blog"
+urt:                 http://kertansul.github.io
 baseurl:             '/'
 paginate:            5
 
@@ -14,4 +14,4 @@ author:
   email:             kertansul@gmail.com
 
 # Custom vars
-version:             0.3.1
+version:             0.3.2
