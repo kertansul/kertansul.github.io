@@ -25,14 +25,14 @@ category: clean_code
     <p>
   舉個例子, 這種寫法:
 
-```java
+```
 for (Node * node = list->head; node != NULL; node = node->next)
     Print(node->data);
 ```
 
   比下面這種寫法來得好:
       
-```java
+```
 Node* node = list->head;
 if (node == NULL) return;
   
@@ -67,7 +67,12 @@ if (bucket != NULL) assert(!bucket->IsOccupied());
 </details>
 
 ## 改善方案
-* TBD
+* 測試
+
+```java
+bucket = FindBucket(key)
+if (bucket != NULL) assert(!bucket->IsOccupied());
+```
 
 ## References
 * Dustin Boswell, Trevor Foucher, 莊弘祥 譯, The Art of Readable Code 易讀程式之美學
