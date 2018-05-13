@@ -13,7 +13,7 @@ category: clean_code
 </details><br>
 
 **Q2: 怎樣的 程式碼, 能夠稱之為 clean code?**
-<details><summary markdown="span">程式碼 應該 **易於理解**</summary>
+<details><summary markdown="span"><span style="color:blue">程式碼 應該 **易於理解**</span></summary>
   **可讀性基本定理**: 撰寫程式時, 應該將 讀者理解 所需的時間 降到最短<br>
   舉個例子, 這種寫法:
     
@@ -36,7 +36,7 @@ if (node != NULL) Print(node->data);
 </details><br>
 
 **Q3: 短的程式碼 都比較好嗎?**
-<details><summary markdown="span">不一定. 與其 減少程式碼數量, 還不如 想辦法 **縮短理解時間** 更加重要</summary>
+<details><summary markdown="span">不一定. 與其 減少程式碼數量, 還不如 想辦法 <span style="color:blue">**縮短理解時間**</span> 更加重要</summary>
   舉個例子, 這個 單行 表示式:
  
 ```java
