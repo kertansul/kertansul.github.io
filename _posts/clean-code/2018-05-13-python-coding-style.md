@@ -16,23 +16,18 @@ category: clean_code
 </details><br/>
 
 **怎樣的 程式碼, 能夠稱之為 clean code?**
+* **程式碼 應該 易於理解** (可讀性基本原理)
 <details>
-  <summary>程式碼 應該 易於理解</summary>
-  <p>
-  盡可能遵守 "可讀性基本原理"
-  <details>
-    <summary>撰寫程式時, 應該將 讀者理解 所需的時間 降到最短</summary>
-    <p>
-  舉個例子, 這種寫法:
+  <summary>撰寫程式時, 應該將 讀者理解 所需的時間 降到最短</summary>
+舉個例子, 這種寫法:
 
-```
+```java
 for (Node * node = list->head; node != NULL; node = node->next)
     Print(node->data);
 ```
-
-  比下面這種寫法來得好:
-      
-```
+比下面這種寫法來得好:
+  
+```java
 Node* node = list->head;
 if (node == NULL) return;
   
@@ -42,18 +37,13 @@ while (node->next != NULL) {
 }
 if (node != NULL) Print(node->data);
 ```
-
-  </p>
-  </details>
-  </p>
 </details><br/>
 
 **短的程式碼 都比較好嗎?**
 <details>
-  <summary>不一定. 與其 減少程式碼數量, 還不如 想辦法 縮短理解時間 更加重要</summary>
-  <p>
-  舉個例子, 這個 單行 表示式:
-
+  <summary>不一定. 與其 減少程式碼數量, 還不如 想辦法 縮短理解時間 更加重要</summary><br/>
+舉個例子, 這個 單行 表示式:
+ 
 ```java
 assert((!(bucket = FindBucket(key))) || !bucket->IsOccupied() )
 ```
@@ -63,16 +53,12 @@ assert((!(bucket = FindBucket(key))) || !bucket->IsOccupied() )
 bucket = FindBucket(key)
 if (bucket != NULL) assert(!bucket->IsOccupied());
 ```
-  </p>
 </details>
 
-## 改善方案
-* 測試
 
-```java
-bucket = FindBucket(key)
-if (bucket != NULL) assert(!bucket->IsOccupied());
-```
+## 改善方案
+* To be Done
+
 
 ## References
 * Dustin Boswell, Trevor Foucher, 莊弘祥 譯, The Art of Readable Code 易讀程式之美學
