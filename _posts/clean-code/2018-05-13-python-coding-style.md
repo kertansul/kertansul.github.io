@@ -29,6 +29,7 @@ category: clean_code
 for (Node * node = list->head; node != NULL; node = node->next)
     Print(node->data);
 ```
+
   比下面這種寫法來得好:
       
 ```java
@@ -41,6 +42,7 @@ while (node->next != NULL) {
 }
 if (node != NULL) Print(node->data);
 ```
+
   </p>
   </details>
   </p>
