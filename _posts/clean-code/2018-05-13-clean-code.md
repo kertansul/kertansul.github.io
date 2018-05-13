@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Clean-Code
+title: Clean Code
 category: clean_code
 ---
 
