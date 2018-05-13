@@ -8,4 +8,4 @@ title: About
 </p>
 
 If you're interested in any one of my blogs and would want further discussions,  
-feel free to contact me thru [email](kertansul@gmail.com)
+feel free to contact me thru [email]<kertansul@gmail.com>

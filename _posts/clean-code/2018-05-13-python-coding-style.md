@@ -1,8 +1,8 @@
-
 ---
 layout: page
 title: Python Coding Style
 ---
+
 
 # References
 
