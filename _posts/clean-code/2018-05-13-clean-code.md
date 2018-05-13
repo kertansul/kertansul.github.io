@@ -10,7 +10,7 @@ category: clean_code
 也有人統計過, 一個軟體工程師 撰寫程式碼 與 閱讀程式碼 的時間比大約是 1:9<br/>
 換句話說, 除了追求程式碼的 效能與正確性 外, 撰寫時的 可閱讀性 亦是重要的一環<br/>
 一個高品質的程式碼, 是能夠 讓後續使用者(包含自己) 在 重複利用, 除蟲, 或 拓展新功能 時能輕易上手
-</details><br/>
+</details>
 
 **Q2: 怎樣的 程式碼, 能夠稱之為 clean code?**
 <details><summary markdown="span">程式碼 應該 **易於理解**</summary>
@@ -34,7 +34,7 @@ while (node->next != NULL) {
 if (node != NULL) Print(node->data);
 ```
   </details>
-</details><br/>
+</details>
 
 **Q3: 短的程式碼 都比較好嗎?**
 <details><summary markdown="span">不一定. 與其 減少程式碼數量, 還不如 想辦法 **縮短理解時間** 更加重要</summary>
