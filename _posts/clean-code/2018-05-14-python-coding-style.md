@@ -135,7 +135,7 @@ NO:    # Stuff on first line forbidden
 <br/>
 
 ## 結語
-### **保持一制性 BE CONSISTENT**
+### 保持一制性 BE CONSISTENT
 * 如果你是在修改別人的 程式碼, 花點時間熟悉 既有的 coding style.
 * **"一致" 的風格 比 "正確" 的風格 更重要**
 
