@@ -130,16 +130,16 @@ NO:    # Stuff on first line forbidden
 
 ### 註解 Comments
 * TBD
-
+<br/>
 
 ## 結語
-* **保持一制性 BE CONSISTENT**
-  * 如果你是在修改別人的 程式碼, 花點時間熟悉 既有的 coding style.
-  * **"一致" 的風格 比 "正確" 的風格 更重要**
+### **保持一制性 BE CONSISTENT**
+* 如果你是在修改別人的 程式碼, 花點時間熟悉 既有的 coding style.
+* **"一致" 的風格 比 "正確" 的風格 更重要**
 
 
 ## References
-* Google Style Guide: https://google.github.io/styleguide/pyguide.html
-* PEP 8: https://www.python.org/dev/peps/pep-0008/
-* PEP 257: https://www.python.org/dev/peps/pep-0257/
-* https://shahriar.svbtle.com/underscores-in-python
+* Google Style Guide: <https://google.github.io/styleguide/pyguide.html>
+* PEP 8: <https://www.python.org/dev/peps/pep-0008/>
+* PEP 257: <https://www.python.org/dev/peps/pep-0257/>
+* <https://shahriar.svbtle.com/underscores-in-python>
