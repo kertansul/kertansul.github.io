@@ -26,40 +26,41 @@ category: clean_code
   * e.g. 創建一個module 叫做 `calculate-histogram.py`
 * 前後雙底線 `__double_leading_and_trailing_underscore__`
   * 為Python內部保留 reserved by Python
+
 #### 慣例 Convention
 * `internal`: 僅使用於某module 或 以protected/private的形式存於某class的 變數或函示
 * 前綴單底線(`_`): 僅 慣例上代表, 該 變數或函示 為 internal 使用
   * 前綴單底線 不具備實際 internal 效應, 僅特殊情況下提供 internal 保護
   * e.g. 在 `import * from` 時不會出現
 * 前綴雙底線(`__`): 對 編譯器interpreter 有實際意義, 將使 變數或函示 變成 internal
-  * 舉下面例子, <https://shahriar.svbtle.com/underscores-in-python>
+  * 舉下面例子, ref: <https://shahriar.svbtle.com/underscores-in-python>
  
-  ```python
-  >>> class A(object):
-  ...     def _internal_use(self):
-  ...         pass
-  ...     def __method_name(self):
-  ...         pass
-  ... 
-  >>> dir(A())
-  ['_A__method_name', ..., '_internal_use']
-  ```
-  可以發現 前綴雙底線 `__method_name` 將被編譯器 自動取代成 `_A__method_name`<br/>
-  這在處理 繼承 inherit 時是有幫助的
+    ```python
+    >>> class A(object):
+    ...     def _internal_use(self):
+    ...         pass
+    ...     def __method_name(self):
+    ...         pass
+    ... 
+    >>> dir(A())
+    ['_A__method_name', ..., '_internal_use']
+    ```
+    可以發現 前綴雙底線 `__method_name` 將被編譯器 自動取代成 `_A__method_name`<br/>
+    這在處理 繼承 inherit 時是有幫助的
   
-  ```python
-  >>> class B(A):
-  ...     def __method_name(self):
-  ...         pass
-  ... 
-  >>> dir(B())
-  ['_A__method_name', '_B__method_name', ..., '_internal_use']
-  ```
+    ```python
+    >>> class B(A):
+    ...     def __method_name(self):
+    ...         pass
+    ... 
+    >>> dir(B())
+    ['_A__method_name', '_B__method_name', ..., '_internal_use']
+    ```
 * class 名稱 使用 `CapWords`, module 名稱 使用 `lower_with_under.py`
   * e.g. 避免出現 `from StringIO import StringIO` 的尷尬情況
-    
+
 #### Naming Table
- 
+
 Type | Public | Internal
 --- | --- | ---
 Packages |	snake_case	|
