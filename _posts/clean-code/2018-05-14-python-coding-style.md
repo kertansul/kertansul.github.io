@@ -59,21 +59,20 @@ category: clean_code
 * class 名稱 使用 `CapWords`, module 名稱 使用 `lower_with_under.py`
   * e.g. 避免出現 `from StringIO import StringIO` 的尷尬情況
 
-#### Naming Table
-
+#### 命名表格Naming Table
   Type | Public | Internal
   --- | --- | ---
-  Packages |	snake_case	|
-  Modules | snake_case | 	_snake_case
-  Classes |	CapWords |	_CapWords
-  Exceptions	| CapWords	|
-  Functions |	snake_case() |	_snake_case()
-  Global/Class Constants |	CAPS_WITH_UNDER |	_CAPS_WITH_UNDER
-  Global/Class Variables |	lower_with_under	| _snake_case
-  Instance Variables	| snake_case |	_snake_case (protected) or __snake_case (private)
-  Method Names |	snake_case() |	_snake_case() (protected) or __snake_case() (private)
-  Function/Method Params |	snake_case	|
-  Local Variables |	snake_case	|
+  Packages | snake_case	| 
+  Modules | snake_case | _snake_case
+  Classes | CapWords | _CapWords
+  Exceptions | CapWords | 
+  Functions | snake_case() | _snake_case()
+  Global/Class Constants | CAPS_WITH_UNDER | _CAPS_WITH_UNDER
+  Global/Class Variables | lower_with_under | _snake_case
+  Instance Variables | snake_case | _snake_case (protected) or __snake_case (private)
+  Method Names | snake_case() | _snake_case() (protected) or __snake_case() (private)
+  Function/Method Params | snake_case | 
+  Local Variables | snake_case | 
 </details><br/>
 
 ### 縮排 Indentation
