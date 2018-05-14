@@ -96,11 +96,11 @@ h2 {
 h3 {
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: #0000FF;
+  color: #000099;
 }
 h4, h5, h6 {
   font-size: 1rem;
-  color: #0000FF;
+  color: #000099;
 }
 h2:after {
     content:' ';
