@@ -59,8 +59,9 @@ category: clean_code
 * class 名稱 使用 `CapWords`, module 名稱 使用 `lower_with_under.py`
   * e.g. 避免出現 `from StringIO import StringIO` 的尷尬情況
 
-#### 命名表格Naming Table
-  Type | Public | Internal
+* 命名表格 Naming Table 整理
+
+  Type | Public | Internal
   --- | --- | ---
   Packages | snake_case	| 
   Modules | snake_case | _snake_case
