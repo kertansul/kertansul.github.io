@@ -36,7 +36,7 @@ category: clean_code
 * Naming Table<br/>
 </details>
 
-### 縮排 Indentation
+#### 縮排 Indentation
 <details><summary markdown="span">一律使用 4 spaces</summary>
 * 永遠不可將 tabs 跟 spaces 混用<br/>
 * 當需要以 多行 表示程式碼時, 可以考慮以下兩種方案<br/>
