@@ -84,7 +84,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #313131;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -97,11 +96,11 @@ h2 {
 h3 {
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: #00FF00;
+  color: #0000FF;
 }
 h4, h5, h6 {
   font-size: 1rem;
-  color: #00FF00;
+  color: #0000FF;
 }
 h2:after {
     content:' ';
