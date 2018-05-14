@@ -14,7 +14,7 @@ author:
   email:             kertansul@gmail.com
 
 # Custom vars
-version:             1.4.1
+version:             1.4.2
 
 # Build settings
 kramdown:
