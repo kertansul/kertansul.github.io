@@ -14,7 +14,7 @@ category: clean_code
 * `pylint` 並非完美, 僅是一個輔助工具. 你應該事情況
   * 修改程式碼
   * 將部分報錯 加入 ignore list (過多報錯, 可能導致你忽略真正需要修改的資訊)
-</details>
+</details><br/>
 
 ### 命名 Naming
 <details><summary markdown="span">`module_name`, `package_name`, `ClassName`, `method_name`, `ExceptionName`, `function_name`, `GLOBAL_CONSTANT_NAME`, `global_var_name`, `instance_var_name`, `function_parameter_name`, `local_var_name`</summary>
@@ -32,7 +32,7 @@ category: clean_code
     * 前綴單底線 不具備實際 internal 效應, 僅特殊情況下提供 internal 保護
     * e.g. 在 `import * from` 時不會出現
   * 前綴雙底線(`__`): 對 編譯器interpreter 有實際意義, 將使 變數或函示 變成 internal
-    * 舉下面例子,
+    * 舉下面例子, ref: <https://shahriar.svbtle.com/underscores-in-python>
  
 ```python
 >>> class A(object):
@@ -55,7 +55,7 @@ category: clean_code
 >>> dir(B())
 ['_A__method_name', '_B__method_name', ..., '_internal_use']
 ```
-    * 有關 前綴單底線 與 前綴雙底線, 更多資訊可參考 <https://shahriar.svbtle.com/underscores-in-python>
+
   * class 名稱 使用 `CapWords`, module 名稱 使用 `lower_with_under.py`
     * e.g. 避免出現 `from StringIO import StringIO` 的尷尬情況
 * Naming Table
@@ -73,7 +73,7 @@ category: clean_code
   Method Names |	lower_with_under() |	_lower_with_under() (protected) or __lower_with_under() (private)
   Function/Method Parameters |	lower_with_under	|
   Local Variables |	lower_with_under	|
-</details>
+</details><br/>
 
 ### 縮排 Indentation
 <details><summary markdown="span">一律使用 4 `spaces`</summary>
@@ -82,8 +82,51 @@ category: clean_code
 * 當需要以 多行 表示程式碼時, 可以考慮以下兩種方案
   * 使用 4 `spaces` 做縮排開頭
   * 使用 垂直方向 對齊
-* e.g.
-</details>
+
+```python
+YES:   # Aligned with opening delimiter
+       foo = long_function_name(var_one, var_two,
+                                var_three, var_four)
+
+       # Aligned with opening delimiter in a dictionary
+       foo = {
+           long_dictionary_key: value1 +
+                                value2,
+           ...
+       }
+
+       # 4-space hanging indent; nothing on first line
+       foo = long_function_name(
+           var_one, var_two, var_three,
+           var_four)
+
+       # 4-space hanging indent in a dictionary
+       foo = {
+           long_dictionary_key:
+               long_dictionary_value,
+           ...
+       }
+```
+```python
+NO:    # Stuff on first line forbidden
+       foo = long_function_name(var_one, var_two,
+           var_three, var_four)
+
+       # 2-space hanging indent forbidden
+       foo = long_function_name(
+         var_one, var_two, var_three,
+         var_four)
+
+       # No hanging indent in a dictionary
+       foo = {
+           long_dictionary_key:
+               long_dictionary_value,
+               ...
+       }
+```
+
+
+</details><br/>
 
 ### 註解 Comments
 * TBD
