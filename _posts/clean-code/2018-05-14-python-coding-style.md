@@ -6,7 +6,7 @@ category: clean_code
 
 ## 建議的 coding 格式
 
-#### `pylint`
+### `pylint`
 <details><summary markdown="span">使用 `pylint` 檢查 程式碼</summary>
 * 透過 `pip install pylint` 安裝<br/>
 * `pylint XXX.py` 執行<br/>
@@ -15,7 +15,7 @@ category: clean_code
   * 將部分報錯 加入 ignore list (過多報錯, 可能導致你忽略真正需要修改的資訊)<br/>
 </details>
 
-#### 命名 Naming
+### 命名 Naming
 <details><summary markdown="span">`module_name`, `package_name`, `ClassName`, `method_name`, `ExceptionName`, `function_name`, `GLOBAL_CONSTANT_NAME`, `global_var_name`, `instance_var_name`, `function_parameter_name`, `local_var_name`</summary>
 * 不允許採用<br/>
   * 單一字元名稱 single character names (e.g. a, b, c)<br/>
@@ -25,18 +25,32 @@ category: clean_code
   * 前後雙底線 `__double_leading_and_trailing_underscore__`<br/>
     * 為Python內部保留 reserved by Python<br/>
 * 慣例 Convention<br/>
-  * `internal`定義: 意指 僅使用於某個 module 或 以protected/private的形式存於某個class 的 變數或函示<br/>
+  * `internal`: 僅使用於某module 或 以protected/private的形式存於某class的 變數或函示<br/>
   * 前綴單底線(`_`): 僅 慣例上代表, 該 變數或函示 為 internal 使用<br/>
-    * 前綴單底線 不具備實際 internal 效應, 僅特殊情況下提供 internal 保護 (e.g. 在 `import * from` 時不會出現)<br/>
+    * 前綴單底線 不具備實際 internal 效應, 僅特殊情況下提供 internal 保護<br/>
+    * e.g. 在 `import * from` 時不會出現<br/>
   * 前綴雙底線(`__`): 對 編譯器interpreter 有實際意義, 將使 變數或函示 變成 internal<br/>
     * e.g.<br/>
     * 有關 前綴單底線 與 前綴雙底線, 更多資訊可參考 <https://shahriar.svbtle.com/underscores-in-python><br/>
   * class 名稱 使用 `CapWords`, module 名稱 使用 `lower_with_under.py`<br/>
     * e.g. 避免出現 `from StringIO import StringIO` 的尷尬情況<br/>
 * Naming Table<br/>
+  Type | Public | Internal
+  --- | --- | ---
+  Packages |	lower_with_under	|
+  Modules | lower_with_under | 	_lower_with_under
+  Classes |	CapWords |	_CapWords
+  Exceptions	| CapWords	|
+  Functions |	lower_with_under() |	_lower_with_under()
+  Global/Class Constants |	CAPS_WITH_UNDER |	_CAPS_WITH_UNDER
+  Global/Class Variables |	lower_with_under	| _lower_with_under
+  Instance Variables	| lower_with_under |	_lower_with_under (protected) or __lower_with_under (private)
+  Method Names |	lower_with_under() |	_lower_with_under() (protected) or __lower_with_under() (private)
+  Function/Method Parameters |	lower_with_under	|
+  Local Variables |	lower_with_under	|
 </details>
 
-#### 縮排 Indentation
+### 縮排 Indentation
 <details><summary markdown="span">一律使用 4 spaces</summary>
 * 永遠不可將 tabs 跟 spaces 混用<br/>
 * 當需要以 多行 表示程式碼時, 可以考慮以下兩種方案<br/>
@@ -45,7 +59,7 @@ category: clean_code
 * e.g.
 </details>
 
-#### 註解 Comments
+### 註解 Comments
 * TBD
 
 
